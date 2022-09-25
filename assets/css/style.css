@@ -83,11 +83,12 @@ img {
 
 }
 .delete {
-    text-align: right;
     display: block;
     position: relative;
+    width:10px;
     top: 8px;
-    right: 10px;
+    float:right;
+    right:10px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;

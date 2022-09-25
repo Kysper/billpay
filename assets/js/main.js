@@ -56,19 +56,19 @@ function createIcon(iconName, imageSource, link, date) {
 
     switch (imageSource) {
         case "electric":
-            img.src = "./imgs/electric.png";
+            img.src = "./assets/imgs/electric.png";
             break;
         case "gas":
-            img.src = "./imgs/heat.png";
+            img.src = "./assets/imgs/heat.png";
             break;
         case "medical":
-            img.src = "./imgs/medical.png";
+            img.src = "./assets/imgs/medical.png";
             break;
         case "water":
-            img.src = "./imgs/water.png";
+            img.src = "./assets/imgs/water.png";
             break;
         case "wifi":
-            img.src = "./imgs/wifi.png";
+            img.src = "./assets/imgs/wifi.png";
             break;
 
         default:
