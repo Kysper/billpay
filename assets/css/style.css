@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -57,8 +58,15 @@ select {
 }
 
 input {
+    border-color: lightblue;
     margin-left: 10px;
-    width: 60%;
+    width: fit-content;
+}
+
+input:focus{
+    outline: none;
+    border-color: lightblue;
+    box-shadow: 0 0 10px lightblue;
 }
 
 input:hover {
@@ -66,8 +74,12 @@ input:hover {
 }
 
 .icon {
-    width:  100px;
-    height: 100px;
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 10px red;
+    border-radius: 5%;
+    width:  fit-content;
+    height: fit-content;
     text-decoration: none;
 }
 
@@ -76,8 +88,8 @@ input:hover {
 }
 
 img {
-    width:50%;
-    height: 50%;
+    width:25%;
+    height: 25%;
     display: block;
     margin: auto;
 
@@ -101,7 +113,8 @@ img {
 
 .panel {
     border: 3px solid gray;
-    width: 40%;
+    border-radius: 5%;
+    width: fit-content;
     padding: 10px;
     margin: 20px;
 }

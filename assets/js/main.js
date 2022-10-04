@@ -23,10 +23,10 @@ submitIcon.addEventListener('click', (e) => {
     const link = document.getElementById('link-to-site').value;
     const date = document.getElementById("date-due").value;
 
-
     console.table(iconName, imageSource, link, date);
 
     createIcon(iconName, imageSource, link, date);
+
 })
 
 
@@ -49,6 +49,8 @@ function createIcon(iconName, imageSource, link, date) {
 
     let dateDisplay = document.createElement("p");
     dateDisplay.textContent = date;
+    dateDisplay.style.paddingTop = "20px";
+    dateDisplay.style.textAlign = "center";
 
 
     let img = document.createElement("img");
@@ -88,7 +90,7 @@ function createIcon(iconName, imageSource, link, date) {
 
     container[0].appendChild(panel);
 
-
+    saveIconToDB(panel);
 
 }
 
@@ -110,11 +112,11 @@ function checkDateDistance(formattedDate, panels) {
             panel.style.border = "3px solid red;"
         } else {
             elem.addEventListener("click", (e) => {
-                panel.style.border = "3px solid green;"
+                e.target.style.borderColor = "green";
+                e.target.style.boxShadow = " 0px 0px 10px green";
             })
 
         }
 
     })
-
 }
