@@ -74,17 +74,19 @@ input:hover {
 }
 
 .icon {
+    margin:10px;
     outline: none;
     border-color: red;
     box-shadow: 0 0 10px red;
     border-radius: 5%;
-    width:  fit-content;
-    height: fit-content;
+    width:  130px;
+    height: 160px;
     text-decoration: none;
 }
 
 .label{
     text-align: center;
+    text-decoration: none;
 }
 
 img {
@@ -103,6 +105,10 @@ img {
     right:10px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+p{
     text-decoration: none;
 }
 

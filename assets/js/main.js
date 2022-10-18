@@ -90,8 +90,6 @@ function createIcon(iconName, imageSource, link, date) {
 
     container[0].appendChild(panel);
 
-    saveIconToDB(panel);
-
 }
 
 setInterval(() => {
@@ -112,8 +110,11 @@ function checkDateDistance(formattedDate, panels) {
             panel.style.border = "3px solid red;"
         } else {
             elem.addEventListener("click", (e) => {
-                e.target.style.borderColor = "green";
-                e.target.style.boxShadow = " 0px 0px 10px green";
+                if (e.target != container[0]) {
+                    e.target.parentNode.style.borderColor = "green";
+                    e.target.parentNode.style.boxShadow = " 0px 0px 10px green";
+                }
+
             })
 
         }
