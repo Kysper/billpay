@@ -10,11 +10,19 @@
 </head>
 
 <body>
+    <nav>
+        <ul id="nav-group">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
     <button id="add" class="btn">New Icon</button>
     <div id="icon-panel" class="panel" hidden="true">
-    
-            <label class="input-label" for="Icon Name:">Icon Name:<input id="icon-name" value="" /></label><br/><br/>
-            <label class="input-label" for="Icon Image:">Bill Type:
+
+        <label class="input-label" for="Icon Name:">Icon Name:<input id="icon-name" value="" /></label><br /><br />
+        <label class="input-label" for="Icon Image:">Bill Type:
             <select id="image-type">
                 <option value="electric">Electric</option>
                 <option value="gas">Gas</option>
@@ -22,10 +30,10 @@
                 <option value="medical">Medical</option>
                 <option value="wifi">Internet</option>
                 <option value="house-glyph">Mortgage / Rent</option>
-              
-        </select></label><br/><br/>
-        <label class="input-label" for="Bill Link">Bill Link:<input id="link-to-site" value="" /></label><br/><br/>
-        <label class="input-label" for="Due Date">Due Date:<input id="date-due" value=""/></label><br/><br/>
+
+            </select></label><br /><br />
+        <label class="input-label" for="Bill Link">Bill Link:<input id="link-to-site" value="" /></label><br /><br />
+        <label class="input-label" for="Due Date">Due Date:<input id="date-due" value="" /></label><br /><br />
         <button id="submit-icon" class="btn" type="submit">Create Icon!</button>
     </div>
     <hr>
